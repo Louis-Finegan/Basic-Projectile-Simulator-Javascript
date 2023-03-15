@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+	<title>Projectile Simulation</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="input_boxes">
+		<div class="velocity_box">
+			<label for="velocity">Initial Velocity (m/s):</label>
+			<input type="text" id="velocity" value="1.2">
+		</div>
+		<div class="angle_box">
+			<label for="angle">Launch Angle (degrees):</label>
+			<input type="text" id="angle" value="45">
+		</div>
+	</div>
+	<div class="start_button">
+		<button id="startBtn">Start</button>
+	</div>
+	<div class="canvas_">
+		<canvas id="canvas" width="1000" height="700"></canvas>
+	</div>
+
+	<script src="projectile-sim/app.js"></script>
+
+</body>
+</html>

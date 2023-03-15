@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    align-items: center;
+    align-self: center;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+  }
+
+.canvas_ {
+    grid-row: 2;
+}  
+
+#canvas {
+    border: 1px solid black;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: gray;
+}
+
+.start_button {
+    grid-row: 3;
+}
+
+#startBtn {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20pt;
+    padding: 10px;
+    width: 5cm;
+    transform: translate(460%, -350%);
+    background-color: black;
+    color: red;
+}
+
+.input_boxes {
+    grid-row: 1;
+}
+
+.angle_box {
+    font-size: 20pt;
+    font-family: 'Times New Roman', Times, serif;
+    position: initial;
+    padding: 25px;
+    transform: translate(0%, -30%);
+}
+
+.velocity_box {
+    font-size: 20pt;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    padding: 25px;
+}
+
+#angle {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    width: 20mm;
+    color: white;
+    background-color: black;
+}
+
+#velocity {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    width: 20mm;
+    color: white;
+    background-color: black;
+}
