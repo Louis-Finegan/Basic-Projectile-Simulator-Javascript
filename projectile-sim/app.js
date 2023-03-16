@@ -1,9 +1,11 @@
+// Reads HTML elements
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 const velocityInput = document.getElementById('velocity');
 const angleInput = document.getElementById('angle');
 const startBtn = document.getElementById('startBtn');
 
+// Projectile Object
 const projectile = {
     x0: 30,
     y0: canvas.height -30,
@@ -13,6 +15,7 @@ const projectile = {
     color: "red"
 }
 
+// Draws Projectile
 function draw_projectile(x , y) {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.beginPath();
@@ -21,6 +24,7 @@ function draw_projectile(x , y) {
     ctx.fill();
 }
 
+// Simulation runs when start button is clicked
 startBtn.addEventListener('click', () => {
 	const gravity = 9.81
     projectile.velocity = parseFloat(velocityInput.value) * 100;
