@@ -1,74 +1,70 @@
+/* style.css */
+
 body {
     margin: 0;
-    padding: 0;
-    display: grid;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #E0E0E0;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    align-self: center;
-    grid-template-rows: auto 1fr auto;
-    min-height: 100vh;
-    background-color: black;
-    color: white;
-  }
-
-.canvas_ {
-    grid-row: 2;
-}  
-
-#canvas {
-    border: 1px solid black;
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: gray;
-}
-
-.start_button {
-    grid-row: 3;
-}
-
-#startBtn {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20pt;
-    padding: 10px;
-    width: 5cm;
-   
-    background-color: black;
-    color: red;
+    height: 100vh;
+    overflow: hidden;
 }
 
 .input_boxes {
-    grid-row: 1;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #1E1E1E;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.angle_box {
-    font-size: 20pt;
-    font-family: 'Times New Roman', Times, serif;
-    position: initial;
-    padding: 25px;
-    transform: translate(0%, -30%);
+.input_boxes label {
+    display: block;
+    margin-bottom: 5px;
 }
 
-.velocity_box {
-    font-size: 20pt;
-    font-family: 'Times New Roman', Times, serif;
-    position: relative;
-    padding: 25px;
+.input_boxes input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #333;
+    border-radius: 3px;
+    background-color: #2C2C2C;
+    color: #E0E0E0;
 }
 
-#angle {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: larger;
-    width: 20mm;
-    color: white;
-    background-color: black;
+.start_button {
+    position: absolute;
+    top: 240px;
+    left: 20px;
 }
 
-#velocity {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: larger;
-    width: 20mm;
-    color: white;
-    background-color: black;
+.start_button button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #6200EA;
+    color: #E0E0E0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.start_button button:hover {
+    background-color: #3700B3;
+}
+
+.canvas_ {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+canvas {
+    border: 1px solid #333;
+    background-color: #1E1E1E;
 }
